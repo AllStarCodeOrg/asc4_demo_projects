@@ -12,7 +12,13 @@ let Student = require("../lib/js/student.js").student;
 describe("Student",function(){
     let student1;
     beforeEach(function(){
-        student1 = new Student("Bob","Bobby","Fake Cohort","assets/blah.png");
+        student1 = new Student(
+            "Bob",
+            "Bobby",
+            "Fake Cohort",
+            "Some Project",
+            "assets/blah.png"
+        );
     })
 
     afterEach(function(){
@@ -25,22 +31,26 @@ describe("Student",function(){
         expect(Student.all[0]).toBe(student1);
     });
 
-    it('should have a .first_name property',function(){
+    it('should have a .first_name property that is also the 1st constructor parameter',function(){
         expect(student1.first_name).toBeDefined();
         expect(student1.first_name).toBe("Bob");
     });
 
-    it('should have a .last_name property',function(){
+    it('should have a .last_name property that is also the 2nd constructor parameter',function(){
         expect(student1.last_name).toBeDefined();
         expect(student1.last_name).toBe("Bobby");
     });
 
-    it('should have a .cohort property',function(){
+    it('should have a .cohort property that is also the 3rd constructor parameter',function(){
         expect(student1.cohort).toBeDefined();
         expect(student1.cohort).toBe("Fake Cohort");
     });
     
-    it('should have a .img property',function(){
+    it('should have a .project_name property that is also the 4th constructor parameter',function(){
+        expect(student1.project_name).toBeDefined();
+        expect(student1.project_name).toBe("Some Project");
+    });
+    it('should have a .img property that is also the 5th constructor parameter',function(){
         expect(student1.img).toBeDefined();
         expect(student1.img).toBe("assets/blah.png");
     });
