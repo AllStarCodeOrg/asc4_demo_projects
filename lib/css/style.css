@@ -1,0 +1,11 @@
+#first {
+  border: red solid 2px;
+  display: inline-block;
+}
+#second {
+  border: blue solid 3px;
+}
+#thehtml {
+	margin: 0;
+	overflow: hidden;
+}

@@ -8,10 +8,7 @@ class Project{
         this.lastName = lastName;
         this.cohort = cohort;
         this.imgString = imgString;
-        this.name = name;
-        this.full = function () {
-          return this.firstName + '' + this.lastName + '' + this.cohort + '' + this.imgString + '' + this.name;
-        }
+        this.name = this.name;
       }
     }
     this.githubLink = githubLink;
@@ -19,9 +16,6 @@ class Project{
     this.shortDesc = shortDesc;
     this.longDesc = longDesc;
     this.imageString = imageString;
-    this.all = function() {
-      return this.name + '' + this.team + '' +
-    }
   }
 }
 
