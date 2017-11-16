@@ -5,7 +5,7 @@
 // make sure to export class in each file being tested
 // module.exports = {
 //     student: Student
-// }
+// }d
 
 let Student = require("../lib/js/student.js").student;
 
@@ -45,7 +45,7 @@ describe("Student",function(){
         expect(student1.cohort).toBeDefined();
         expect(student1.cohort).toBe("Fake Cohort");
     });
-    
+
     it('should have a .project_name property that is also the 4th constructor parameter',function(){
         expect(student1.project_name).toBeDefined();
         expect(student1.project_name).toBe("Some Project");
@@ -58,7 +58,7 @@ describe("Student",function(){
     it('should have a .img property that defaults to "assets/placeholder.png" when no string or empty string given',function(){
         let student2 = new Student("1","2","3");
         expect(student2.img).toBe("assets/placeholder.png");
-        
+
         let student3 = new Student("1","2","3","");
         expect(student3.img).toBe("assets/placeholder.png");
     });
