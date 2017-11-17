@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 #first {
   border: red solid 2px;
   display: inline-block;
@@ -8,4 +14,30 @@
 #thehtml {
 	margin: 0;
 	overflow: hidden;
+}
+
+#toph {
+  height: 40px;
+  max-height: 40px;
+  display: block;
+  background-color: #51C1E9;
+  width: 100%;
+
+}
+
+#bottomh {
+  height: 40px;
+  max-height: 40px;
+  display: block;
+  background-color: #000000;
+  width: 100%;
+
+}
+#pic{
+  padding-top: 10px;
+  margin-top: 34px;
+  margin-left: 510px;
+}
+#logo {
+  height: 100px;
 }
