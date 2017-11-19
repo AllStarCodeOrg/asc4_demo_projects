@@ -2,16 +2,21 @@
 <html>
 <head>
 <!-- Some resources -->
-<script src="C:\Users\ASC Guest\Desktop\asc4_demo_projects\lib\three.js-master\build\three.js"></script>
+
+
+<script src="C:\Users\ASC Guest\Desktop\asc4_demo_projects\lib\js\flip.js"></script>
+
 <link rel="stylesheet" href="C:\Users\ASC Guest\Desktop\asc4_demo_projects\lib\bootstrap\bootstrap.css">
 <script
 src="https://code.jquery.com/jquery-3.2.1.js"
 integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
 crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 <script src="C:\Users\ASC Guest\Desktop\asc4_demo_projects\lib\bootstrap\bootstrap.js"></script>
 <link rel="stylesheet" href="lib\css\style.css">
 
 <script src="lib\js\scripts.js"></script>
+
 
 <!-- Seeding Data (NOTE: load after defining Student and Project class) -->
 <script src="lib\js\mahdi.js"></script>
@@ -32,9 +37,9 @@ crossorigin="anonymous"></script>
     <div id="bottomh">
       <nav class="navbar navbar-inverse bg-inverse">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Home</a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link" id="navstuff" href="#">All star code</a>
+          <a class="nav-item nav-link" id="navstuff" href="#">Features</a>
+          <a class="nav-item nav-link" id="navstuff" href="#">Pricing</a>
         </div>
   <!-- Navbar content -->
       </nav>
@@ -42,24 +47,239 @@ crossorigin="anonymous"></script>
     </div>
   </div>
 
-<!-- <span id="title">ALL STAR CODE</span>
-  <span id="sd">
-    All star code is a program aimed at teaching the young black and latino men the skills they need to enter high level tech jobs! <br> Check out some of the final projects of students of the 2017 summer intensive!
-  </span> -->
 
-<!-- <div class="container">
-  <div class="row">
-    <div id="first" class="col-2">
-        Testing
-    </div>
-    <div id="first" class="col-4">
-        Testing
-    </div>
-    <div id="first" class="col-3">
-        Testing
-    </div>
-  </div>
-</div> -->
+
+<div id="title">
+  All star code is a program aimed at getting young minority men the skills they need to succeed in the tech industry<br>Here you'll find some of the 2017 SI students' final projects
+</div>
+
+
+
+
+   <style type="text/css">
+      .card {
+       width: 250px;
+       height: 250px;
+       margin: 20px;
+       display: inline-block;
+     }
+
+     .front, .back {
+       border: 2px gray solid;
+       padding: 10px;
+     }
+     .front {
+       background-color: #ccc;
+     }
+     .back {
+       background-color: red;
+     }
+   </style>
+ </head>
+ <body>
+   <div id="card-1" class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div id="card-2" class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+
+   <div class="card">
+     <div class="front">
+         Front
+     </div>
+     <div class="back">
+         Back
+     </div>
+   </div>
+   <script type="text/javascript">
+   $(function(){
+     $(".card").flip({
+       trigger: "hover"
+     });
+   });
+   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 <html>

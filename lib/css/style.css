@@ -6,15 +6,12 @@
 
 #first {
   border: red solid 2px;
-  display: inline-block;
+  display: inline-flex;
 }
 #second {
   border: blue solid 3px;
 }
-#thehtml {
-	margin: 0;
-	overflow: hidden;
-}
+
 
 #toph {
   height: 40px;
@@ -41,11 +38,21 @@
 #logo {
   height: 100px;
 }
+#navstuff{
+  margin-left: 300px;
+  display: inline-flex;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
 
-
-
-
-
-.nav-item .nav-link {
-  margin-left: auto !important;
+}
+#title{
+  margin-top: 135px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+.container{
+  margin-top: 150px !important;
+  margin-left: 600px;
 }
