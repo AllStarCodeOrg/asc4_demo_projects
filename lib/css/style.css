@@ -41,3 +41,11 @@
 #logo {
   height: 100px;
 }
+
+
+
+
+
+.nav-item .nav-link {
+  margin-left: auto !important;
+}
