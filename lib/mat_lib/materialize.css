@@ -4702,6 +4702,7 @@ small {
           transform: scale(1);
 }
 
+
 .card-panel {
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
@@ -4712,8 +4713,7 @@ small {
   border-radius: 2px;
   background-color: #fff;
 }
-
-.card {
+/*.card {
   position: relative;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
@@ -4722,7 +4722,7 @@ small {
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   border-radius: 2px;
-}
+}*/
 
 .card .card-title {
   font-size: 24px;
@@ -5129,7 +5129,7 @@ small {
           transform-origin: 50% 0%;
   visibility: hidden;
 }
-
+/*
 .btn, .btn-large,
 .btn-flat {
   border: none;
@@ -5308,7 +5308,7 @@ button.btn-floating {
   height: 100%;
   left: auto;
   width: 500px;
-  /*width 100% only goes to width of button container */
+
 }
 
 .fixed-action-btn.horizontal ul li {
@@ -5432,7 +5432,7 @@ button.btn-floating {
 
 .btn-block {
   display: block;
-}
+}*/
 
 .dropdown-content {
   background-color: #fff;
@@ -5625,7 +5625,7 @@ button.btn-floating {
   z-index: -1;
 }
 
-.modal {
+/*.modal {
   display: none;
   position: fixed;
   left: 0;
@@ -5638,7 +5638,7 @@ button.btn-floating {
   overflow-y: auto;
   border-radius: 2px;
   will-change: top, opacity;
-}
+}*/
 
 @media only screen and (max-width: 992px) {
   .modal {
@@ -5646,7 +5646,7 @@ button.btn-floating {
   }
 }
 
-.modal h1, .modal h2, .modal h3, .modal h4 {
+/*.modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
 }
 
@@ -5712,7 +5712,7 @@ button.btn-floating {
   max-height: 45%;
   border-radius: 0;
   will-change: bottom, opacity;
-}
+}*/
 
 .collapsible {
   border-top: 1px solid #ddd;
