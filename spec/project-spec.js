@@ -24,7 +24,7 @@ describe("Project",function(){
         delete Project.all //clearing array
     })
 
-    
+
     it('should have a .all CLASS property that stores each new instance upon construction',function(){
         expect(Array.isArray(Project.all)).toBeTruthy();
         expect(Project.all.length).toBe(1);
@@ -35,10 +35,10 @@ describe("Project",function(){
         expect(project1.name).toBeDefined();
         expect(project1.name).toBe("Fake Project");
     });
-    
+
     it("should have a .githubLink property that is also the 2nd constructor parameter",function(){
         expect(project1.githubLink).toBeDefined();
-        expect(project1.githubLink).toBe("blah.github.com"); 
+        expect(project1.githubLink).toBe("blah.github.com");
     });
 
     it("should have a .projectLink property that is also the 3rd constructor parameter",function(){
@@ -50,7 +50,7 @@ describe("Project",function(){
         expect(project1.shortDesc).toBeDefined();
         expect(project1.shortDesc).toBe("blah blah blah");
     });
-    
+
     it("should have a .longDesc property that is also the 5th constructor parameter",function(){
         expect(project1.longDesc).toBeDefined();
         expect(project1.longDesc).toBe("No, really, blah blah blah");
@@ -60,15 +60,15 @@ describe("Project",function(){
         expect(project1.img).toBeDefined();
         expect(project1.img).toBe("assets/blah.png");
     });
-    
+
     it('should have a .img property that defaults to "assets/placeholder.png" when no string or empty string given',function(){
         let project2 = new Project("1","2","3","4","5");
         expect(project2.img).toBe("assets/placeholder.png");
-        
+
         let project3 = new Project("1","2","3","4","5","");
         expect(project2.img).toBe("assets/placeholder.png");
     });
-    
+
     it("should have a .team property that defaults to an empty array",function(){
         expect(project1.team).toBeDefined();
         expect(Array.isArray(project1.team)).toBeTruthy();
@@ -84,8 +84,8 @@ describe("Project",function(){
             student2.project_name = "No Project";
             let students = [student1,student2];
             project1.fillTeam(students);
-            expect(project1.team).toContain(studen1);
-            expect(project1.team).not.toContain(studen2);
+            expect(project.team).toContain(student1);
+            expect(project.team).not.toContain(student2);
         });
 
         it('should throw a Type Error if the input parameter is not an array',function(){
