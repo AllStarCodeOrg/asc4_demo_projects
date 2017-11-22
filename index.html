@@ -17,9 +17,10 @@ crossorigin="anonymous"></script>
 <script src="lib\mat_lib\materialize.js"></script>
 <link rel="stylesheet" href="lib\mat_lib\materialize.css">
 
-<script src="lib\js\scripts.js"></script>
+<script src="lib\js\inject.js"></script>
 <script src="lib\js\project.js"></script>
 <script src="lib\js\student.js"></script>
+
 
 <!-- Seeding Data (NOTE: load after defining Student and Project class) -->
 <script src="lib\js\mahdi.js"></script>
@@ -72,6 +73,7 @@ crossorigin="anonymous"></script>
 </div>
     <script>
     $(document).ready(function(){
+      console.log(this.team)
      $('.carousel').carousel();
    });
    $('.carousel').carousel('next');
