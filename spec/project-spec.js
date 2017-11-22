@@ -89,11 +89,11 @@ describe("Project",function(){
         });
 
         it('should throw a Type Error if the input parameter is not an array',function(){
-            expect(()=>project1.fillTeam("a string")).toThrowError(TypeError);
+            expect(()=>project1.fillTeam("a string")).toThrow();
         });
         it('should throw a Type Error if any element of the array parameter is not a Student instance',function(){
             class Student{}
-            expect(()=>project1.fillTeam([1,new Student])).toThrowError(TypeError);
+            expect(()=>project1.fillTeam([1,new Student])).toThrow();
         });
     });
 });
