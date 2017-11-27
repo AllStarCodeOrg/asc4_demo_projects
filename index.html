@@ -17,9 +17,9 @@ crossorigin="anonymous"></script>
 <script src="lib\mat_lib\materialize.js"></script>
 <link rel="stylesheet" href="lib\mat_lib\materialize.css">
 
-<script src="lib\js\inject.js"></script>
 <script src="lib\js\project.js"></script>
 <script src="lib\js\student.js"></script>
+<script src="lib\js\inject.js"></script>
 
 
 <!-- Seeding Data (NOTE: load after defining Student and Project class) -->
@@ -73,7 +73,7 @@ crossorigin="anonymous"></script>
 </div>
     <script>
     $(document).ready(function(){
-      console.log(Student.all)
+      $("html").slideDown();
      $('.carousel').carousel();
    });
    $('.carousel').carousel('next');
@@ -88,7 +88,22 @@ $('.carousel').carousel('set', 4);
 
 // Destroy carousel
 $('.carousel').carousel('destroy');
+x = 2;
+var y = () => x++
+var target = "modalcontent";
 
+var idTargeter = () => {
+ var nm = y()
+ var num = nm.toString();
+ var result = "#" + target + num;
+
+ return result
+}
+var eye = idTargeter().toString()
+for(var i = 0; i <18; i++){
+
+}
+$("duv#modalcontent2.modal-body").text("Buttcheeks")
     </script>
 
 
@@ -115,6 +130,9 @@ $('.carousel').carousel('destroy');
      }
      .back {
        background-color: rgba(81,193,233, .65);
+     }
+     .btn {
+
      }
    </style>
  </head>
