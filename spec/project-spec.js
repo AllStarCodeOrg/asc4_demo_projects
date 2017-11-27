@@ -84,8 +84,8 @@ describe("Project",function(){
             student2.project_name = "No Project";
             let students = [student1,student2];
             project1.fillTeam(students);
-            expect(project.team).toContain(student1);
-            expect(project.team).not.toContain(student2);
+            expect(project1.team).toContain(student1);
+            expect(project1.team).not.toContain(student2);
         });
 
         it('should throw a Type Error if the input parameter is not an array',function(){
