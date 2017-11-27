@@ -2,37 +2,10 @@
 <html>
 <head>
 <!-- Some resources -->
-
-
-<script src="lib\js\flip.js"></script>
-
+<!-- CSS and Metadata here -->
 <link rel="stylesheet" href="lib\bootstrap\bootstrap.css">
-<script
-src="https://code.jquery.com/jquery-3.2.1.js"
-integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-crossorigin="anonymous"></script>
-<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-<script src="lib\bootstrap\bootstrap.js"></script>
-<link rel="stylesheet" href="lib\css\style.css">
-<script src="lib\mat_lib\materialize.js"></script>
 <link rel="stylesheet" href="lib\mat_lib\materialize.css">
-
-<script src="lib\js\project.js"></script>
-<script src="lib\js\student.js"></script>
-<script src="lib\js\inject.js"></script>
-
-
-<!-- Seeding Data (NOTE: load after defining Student and Project class) -->
-<script src="lib\js\mahdi.js"></script>
-<script src="lib\js\seed.js"></script>
-
-
-
-
-
-
-
-
+<link rel="stylesheet" href="lib\css\style.css">
 </head>
 <body id="thehtml">
 
@@ -71,40 +44,7 @@ crossorigin="anonymous"></script>
   <a class="carousel-item" href="#four!"><img src="http://via.placeholder.com/250x250"></a>
   <a class="carousel-item" href="#five!"><img src="http://via.placeholder.com/250x250"></a>
 </div>
-    <script>
-    $(document).ready(function(){
-      $("html").slideDown();
-     $('.carousel').carousel();
-   });
-   $('.carousel').carousel('next');
-$('.carousel').carousel('next', 3); // Move next n times.
 
-// Previous slide
-$('.carousel').carousel('prev');
-$('.carousel').carousel('prev', 4); // Move prev n times.
-
-// Set to nth slide
-$('.carousel').carousel('set', 4);
-
-// Destroy carousel
-$('.carousel').carousel('destroy');
-x = 2;
-var y = () => x++
-var target = "modalcontent";
-
-var idTargeter = () => {
- var nm = y()
- var num = nm.toString();
- var result = "#" + target + num;
-
- return result
-}
-var eye = idTargeter().toString()
-for(var i = 0; i <18; i++){
-
-}
-$("duv#modalcontent2.modal-body").text("Buttcheeks")
-    </script>
 
 
 
@@ -137,11 +77,6 @@ $("duv#modalcontent2.modal-body").text("Buttcheeks")
    </style>
  </head>
  <body>
-<script>
-
-
-
-</script>
 
 
    <div id="card-1" class="card">
@@ -701,13 +636,60 @@ Card serperator for readability
    </div>
 
 
-   <script type="text/javascript">
-   $(function(){
-     $(".card").flip({
-       trigger: "hover"
-     });
-   });
-   </script>
+<!-- BOTTOM OF BOTTOM WHERE JS BELONGS -->
 
+<!-- jquery -->
+<script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+
+<!-- flip -->
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script src="lib\js\flip.js"></script>
+
+
+<!-- bootstrap and styling -->
+<script src="lib\bootstrap\bootstrap.js"></script>
+<script src="lib\mat_lib\materialize.js"></script>
+
+<!-- carousel -->
+<script>
+$(document).ready(function(){
+  $("html").slideDown();
+  $('.carousel').carousel();
+});
+$('.carousel').carousel('next');
+$('.carousel').carousel('next', 3); // Move next n times.
+
+// Previous slide
+$('.carousel').carousel('prev');
+$('.carousel').carousel('prev', 4); // Move prev n times.
+
+// Set to nth slide
+$('.carousel').carousel('set', 4);
+
+// Destroy carousel
+$('.carousel').carousel('destroy');
+</script>
+<!-- reset/normaliz -->
+
+<!-- custom scripts -->
+<script src="lib\js\project.js"></script>
+<script src="lib\js\student.js"></script>
+
+<!-- Seeding Data (NOTE: load after defining Student and Project class) -->
+<script src="lib\js\mahdi.js"></script>
+<script src="lib\js\seed.js"></script>
+ <script type="text/javascript">
+ $(function(){
+   $(".card").flip({
+     trigger: "hover"
+   });
+ });
+ </script>
+
+<!-- adding project flips via jquery  -->
+ <script src="lib\js\inject.js"></script>
 </body>
 <html>
