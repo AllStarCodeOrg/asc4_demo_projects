@@ -12,6 +12,28 @@
   border: blue solid 3px;
 }
 
+.card {
+ width: 250px;
+ height: 250px;
+ margin: 20px;
+ margin-left: 200px;
+ display: inline-flex;
+ margin-bottom: 100px;
+}
+
+.front, .back {
+ border: 2px gray solid;
+ padding: 10px;
+ font-weight: bold;
+ font-family: Montserrat, sans-serif;
+ font-size: 20px;
+}
+.front {
+ background-color: rgba(81,193,233, .65);
+}
+.back {
+ background-color: rgba(81,193,233, .65);
+}
 
 #toph {
   height: 40px;
