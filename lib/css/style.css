@@ -4,25 +4,22 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-#first {
-  border: red solid 2px;
-  display: inline-flex;
-}
-#second {
-  border: blue solid 3px;
-}
+
 
 .card {
  width: 250px;
  height: 250px;
- margin: 20px;
- margin-left: 200px;
- display: inline-flex;
+ display: inline-block!important;
+ margin-left: 300px!important;
  margin-bottom: 100px;
+ margin-top: 75px;
+ align-content: center;
+ position: absolute;
+ float: left;
 }
 
 .front, .back {
- border: 2px gray solid;
+ border: 2px black solid;
  padding: 10px;
  font-weight: bold;
  font-family: Montserrat, sans-serif;
@@ -34,6 +31,8 @@
 .back {
  background-color: rgba(81,193,233, .65);
 }
+
+
 
 #toph {
   height: 40px;
