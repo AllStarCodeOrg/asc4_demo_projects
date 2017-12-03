@@ -9,14 +9,14 @@
 </head>
 <body id="thehtml">
 
-  <div id="toph">
+  <div id="toph" class="container-fluid">
     <div id="logo">
-      <img id="pic" src="assets\asc_logo_598x99.jpg" height="62px" alt="Couldn't load image (　ﾟдﾟ)">
+      <img id="pic" src="assets\asc_logo_598x99.jpg" alt="Couldn't load image (　ﾟдﾟ)">
     </div>
     <div id="bottomh">
-      <nav class="navbar navbar-inverse bg-inverse">
+      <nav id="datnav" class="navbar navbar-inverse bg-inverse">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" id="navstuff" href="http://www.allstarcode.org/">All star code</a>
+          <a class="nav-item nav-link" id="navstuff" href="http://www.allstarcode.org/">All Star Code Site!</a>
           <a class="nav-item nav-link" id="navstuff" href="#"></a>
           <a class="nav-item nav-link" id="navstuff" href="#"></a>
         </div>
@@ -29,23 +29,21 @@
 
 
 
-<div id="title">
-  All star code is a program aimed at getting young minority men the skills they need to succeed in the tech industry<br>Here you'll find some of the 2017 SI students' final projects
-</div>
 
 
-
-
-
-<div class="carousel">
+<div class="carousel" id="caro">
   <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/250x250"></a>
   <a class="carousel-item" href="#two!"><img src="http://via.placeholder.com/250x250"></a>
   <a class="carousel-item" href="#three!"><img src="http://via.placeholder.com/250x250"></a>
   <a class="carousel-item" href="#four!"><img src="http://via.placeholder.com/250x250"></a>
   <a class="carousel-item" href="#five!"><img src="http://via.placeholder.com/250x250"></a>
 </div>
-
-
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</div>
 
 
 
@@ -55,60 +53,6 @@
 <div id="giantContainer">
 
 </div>
-<!--
-<div id="card-1" class="card">
-<div class="front" id="c1f">
-<img src="assets\gg.png" height="225" width="240" alt="Couldn't load image (　ﾟдﾟ)">
-<div id="front-text">Bada-bing bada-boom, got the flip working</div>
-</div>
-<div class="back">
-<div >
-And the back too awwww yeah
-<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch demo modal </button>
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-</div>
-<div class="modal-body" id="modalcontent2">
-
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-</div>
-</div>
-</div>
-</div> -->
-<!--
-Card serperator for readability
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -129,6 +73,8 @@ crossorigin="anonymous"></script>
 <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 <script src="lib\js\flip.js"></script>
 
+<!-- Parallax -->
+<script src='lib\Parallax\parallax.js'></script>
 
 <!-- bootstrap and styling -->
 <script src="lib\bootstrap\bootstrap.js"></script>
@@ -137,7 +83,6 @@ crossorigin="anonymous"></script>
 <!-- carousel -->
 <script>
 $(document).ready(function(){
-  $("html").slideDown();
   $('.carousel').carousel();
 });
 $('.carousel').carousel('next');
@@ -152,6 +97,9 @@ $('.carousel').carousel('set', 4);
 
 // Destroy carousel
 $('.carousel').carousel('destroy');
+
+
+
 </script>
 <!-- reset/normaliz -->
 
