@@ -18,8 +18,9 @@ html {
 
 
 .jumbotron {
-  
+
 }
+
 
 .card {
  width: 250px;
@@ -35,7 +36,7 @@ html {
 
 .front, .back {
  border: 2px black solid;
- padding: 10px;
+
  font-weight: bold;
  font-family: Montserrat, sans-serif;
  font-size: 20px;
@@ -47,7 +48,11 @@ html {
  background-color: white;
 }
 
-
+.front img {
+  height: 240px;
+  width: 240px;
+  text-align: center;
+}
 
 #toph {
   height: 40px;
