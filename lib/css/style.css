@@ -13,6 +13,8 @@ html {
 }
 #caro {
   background-image: url('../../assets/asc_stock.jpg');
+  background-position: center center;
+  background-size: 100% 1000px;
 
 }
 
@@ -52,15 +54,18 @@ html {
   height: 240px;
   width: 240px;
   text-align: center;
+  padding-top: 5px;
+  padding-left: 5px;
 }
+.jumbotron {
 
+}
 #toph {
   height: 40px;
   max-height: 40px;
   display: block;
   background-color: #51C1E9;
   width: 100%;
-
 }
 
 #bottomh {
@@ -136,4 +141,11 @@ html {
 .btn:hover {
   background: #51C1E9;
   text-decoration: none;
+}
+
+.name {
+  margin-top: 50px !important;
+  text-align: center;
+  border: solid 3px black;
+  background-color: white;
 }
