@@ -47,7 +47,7 @@ html {
 .card {
  width: 250px;
  height: 250px;
- display: inline-block!important;
+ display: inline-flex!important;
  margin-left: 300px!important;
  margin-bottom: 100px;
  margin-top: 75px;
