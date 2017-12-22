@@ -5613,7 +5613,7 @@ button.btn-floating {
 
 @media only screen and (max-width: 992px) {
   .modal {
-    width: 80%;
+    /* width: 80%; */
   }
 }
 
