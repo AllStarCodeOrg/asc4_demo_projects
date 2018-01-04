@@ -262,3 +262,9 @@ html {
   border: none;
   text-align: center;
 }
+
+/* img should be 100x100px by default */
+.modal img{
+  border-radius: 15px;
+  /* border: #51c1e9 solid 2px; */
+}
