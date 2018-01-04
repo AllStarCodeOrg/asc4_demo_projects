@@ -255,7 +255,9 @@ html {
   right: 7px;
   top: 3px;
 }
-
+.modal-body{
+  color: black;
+}
 .modal-header {
   padding: 0;
   margin-top: 15px;
