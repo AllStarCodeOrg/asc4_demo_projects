@@ -32,21 +32,29 @@
 
 <div class="search-container">
   <div>
-    <select name="by_cohort" id="by_cohort">
+    <p>Find by cohort:</p>
+    <select name="by_cohort" id="by_cohort" onchange="cohortSelect()">
       <option value="All">All</option>
     </select>
 
   </div>
 
   <div>
-    <input type="text" placeholder="Search.." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
+    <p>Find by word(s):</p>
+    <input id="search" type="text" placeholder="Search.." name="search">
+    <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
   </div>
 </div>
 
 <div id="giantContainer">
 
 </div>
+
+<footer>
+  <p> Copyright © 2017 Dante Rivera | All rights reserved</p>
+</footer> 
+
+
 <!-- BOTTOM OF BOTTOM WHERE JS BELONGS -->
 
 <!-- jquery -->

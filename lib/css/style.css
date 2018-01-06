@@ -270,3 +270,57 @@ html {
   border-radius: 15px;
   /* border: #51c1e9 solid 2px; */
 }
+
+.search-container{
+  /* width: 35%; */
+  padding: 0 30vw 15px 30vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #51c1e9;
+
+}
+.search-container div{
+  text-align: center;
+}
+
+.search-container p{
+  color:white;
+  font-size: 20px;
+}
+
+#search{
+  background-color: white;
+  margin: 0;
+  border: black 3px solid;
+  padding: 3px;
+}
+
+.nope{
+  color: red;
+  font-size: 40px;
+  text-align: center;
+}
+
+footer{
+  height: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+footer p{
+  font-size: 16px;
+  border: black 3px solid;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px 15px;
+  width: fit-content;
+  margin-bottom: 25px;
+}
+
+#by_cohort{
+  display: initial;
+}
