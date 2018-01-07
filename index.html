@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Some resources -->
 <!-- CSS and Metadata here -->
+<!-- Bootstrap -->
 <link rel="stylesheet" href="lib\bootstrap\bootstrap.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
 <link rel="stylesheet" href="lib\mat_lib\materialize.css">
 <link rel="stylesheet" href="lib\css\style.css">
 </head>
 <body>
 
-  <!-- <div class="logo">
-    <img src="assets\logo.jpg" alt="Couldn't load image (　ﾟдﾟ)">
-  </div> -->
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#"> -->
+          <!-- <a href="#"> -->
+              <img src="assets/logoHorz.png" alt="ALL STAR CODE">
+          <!-- </a> -->
+      </div>
+      <div id="navbar2" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li>
+                  <a href="http://www.allstarcode.org/donate/" target="_blank" data-toggle="collapse" data-target=".navbar-collapse" id="donate" class="buttonize">
+                      Donate
+                  </a>
+              </li>
+              <li>
+                  <a href="https://allstarcodeorg.github.io/"
+                      target="_blank" data-toggle="collapse" data-target=".navbar-collapse">
+                      Apply
+                  </a>
+              </li>
+              <li>
+                  <a href="http://www.allstarcode.org/contact/" target="_blank" data-toggle="collapse" data-target=".navbar-collapse">
+                      Contact
+                  </a>
+              </li>
+              <li>
+                  <a href="http://www.allstarcode.org" target="_blank" data-toggle="collapse" data-target=".navbar-collapse">
+                      Main Site
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <!--/.nav-collapse -->
+  </div>
+  <!--/.container-fluid -->
+</nav>
 
 <div class="carousel parallax" id="caro">
   <a class="carousel-item" href="#one!"><img src="assets/1.jpg"></a>
@@ -40,9 +84,15 @@
   </div>
 
   <div>
-    <p>Find by word(s):</p>
+    <p>Find by search:</p>
     <input id="search" type="text" placeholder="Search.." name="search">
     <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+  </div>
+
+  <div class="reset">
+    <button  onclick="reset()">
+      Reset
+    </button>
   </div>
 </div>
 
